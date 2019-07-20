@@ -1,0 +1,13 @@
+﻿<div class="Portfolio">
+    <a href="#!">
+        <img class="card-img" ng-src="{{itemData.avatar_url==''? emptyAvatar:itemData.avatar_url}}" alt="">
+    </a>
+    
+    <div class="desc">{{itemData.name}}
+        <span ng-click="addItem()">
+            <i class="fa fa-fw far fa-bookmark"  ng-class="{'marked':itemData.isMarked}">
+
+            </i>
+        </span>
+    </div>
+</div>
