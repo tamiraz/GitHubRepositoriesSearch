@@ -7,7 +7,7 @@
               
                 <button class="btn btn-outline-success mr-lg-5" ng-click="vm.getBookmarks()" type="button">All bookmarks</button>
 
-                <input class="form-control ml-sm-3" type="search" ng-model="vm.searchText" placeholder="Search" required aria-label="Search">
+                <input class="form-control ml-sm-3" type="search" ng-model="vm.searchText" placeholder="Search" ng-keydown="$event.keyCode === 13 && vm.search()"  required aria-label="Search">
                 <button class="btn btn-outline-success ml-2 my-sm-0" ng-click="vm.search()" type="button">Search</button>
             </form>
         </nav>
